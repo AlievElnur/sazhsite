@@ -1,0 +1,31 @@
+{% extends 'sazhenci/index.html' %}
+{% load static %}
+
+{% block content %}
+<div id="dostavka">
+    <div class="dostavka_1">
+        <img src="{% static 'sazhenci/images/bbr.jpg'%}">
+        <div class="dost"><h1>boxberry</h1>
+            <p>
+                <li>1</li>
+            </p>
+        </div>
+    </div>
+    <div class="dostavka_2">
+        <img src="{% static 'sazhenci/images/pr.jpg'%}">
+        <div class="dost"><h1>ПочтаРоссии</h1>
+            <p>
+                <li>1</li>
+            </p>
+        </div>
+    </div>
+    <div class="dostavka_3">
+        <img src="{% static 'sazhenci/images/cdek.png'%}">
+        <div class="dost"><h1>CDEK</h1>
+            <p>
+                <li>1</li>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'sazhenci/index.html' %}
+
+{% block content %}
+<h1>{{title}}</h1>
+
+<form action="{% url 'add_page' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+{% for f in form %}
+<div id="suka">
+    <label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label><div id="pole">{{ f }}</div>
+</div>
+<div class="form-error">{{ f.errors }}</div>
+{% endfor %}
+
+    <button type="submit">Добавить</button>
+</form>
+{% endblock %}

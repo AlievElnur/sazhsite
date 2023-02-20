@@ -1,0 +1,7 @@
+{% for l in lefts %}
+    {% if l.pk == lef_selected %}
+        <li class="selected">{{l.name}}</li>
+    {% else %}
+        <li><a href="{{ l.get_absolute_url }}">{{ l.name }}</a></li>
+    {% endif %}
+{% endfor %}

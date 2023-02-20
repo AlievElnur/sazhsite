@@ -1,0 +1,22 @@
+{% extends 'sazhenci/index.html' %}
+
+{% block content %}
+    {% for p in posts %}
+    <ul>    
+        <div class="xyu">
+
+{% if p.photo %}
+    <p class="all_images"><img src="{{p.photo.url}}"></p>
+{% endif %}
+
+            <h1 class="razmer_text_title">{{p.title}}</h1>
+            <hr>
+            <br>
+            <p class="razmer_text">{{p.content|truncatewords:50}}</p>
+            <p class="chitat-post"><a href="{% url 'post' p.slug %}">Читать пост</a></p>
+            <hr>
+            <br>
+        </div>    
+    {% endfor %}
+    </ul>
+{% endblock %}

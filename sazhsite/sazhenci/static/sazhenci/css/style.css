@@ -1,0 +1,390 @@
+        /* Вложения */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&family=DynaPuff:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+        /* Общий стиль */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+        /* Тег боди */
+
+body {
+    background-image: url(back_10.jpeg);
+    /* background-image: url(image/back_8.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+        /* Рабочее пространство */
+
+#main {
+    color:rgb(0, 0, 0);
+    height: 85%;
+    width: 79%;
+    float: left;
+    padding-left: 2px;
+    padding-top: 2px;
+    text-shadow: rgba(0, 0, 0, 0.145) 1px 1px 1px;
+    background-color: rgba(255, 255, 255, 0.486);
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+        /* Главное меню */
+
+#logo {
+    display: flex;
+    float: top;
+    position: absolute;
+    border-radius: 50%;
+    height: 9.5vh;
+    width: 9.5vh;
+    text-align: center;
+    line-height: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#header {
+    height: 10%;
+    width: 100%;
+    float: top;
+    text-align: center;
+    line-height: 10vh;
+    /* background: rgb(255, 255, 255) linear-gradient(rgb(162, 255, 100), rgb(52, 112, 60)); */
+    /* background-image: url(image/header_back_4.jpg); */
+    /* background-image: url(image/header_7.jpg); */
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    /* background-color: rgba(0, 0, 0, 0.151); */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.027));
+    /* background: rgba(0, 0, 0, 0.151) linear-gradient(rgba(0, 0, 0, 0.288), rgba(255, 242, 242, 0.637)); */
+}
+
+
+#main_menu {
+    list-style: none;
+    padding-top: 5px;
+    display: block;
+    padding-left: 20vh;
+}
+
+#main_menu a {
+    background:rgba(0, 0, 0, 0.226) linear-gradient(rgb(255, 240, 165), rgb(248,157,23));
+    border-radius: 10px;
+    display: inline;
+    padding: 15px 4%;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    margin-right: 0.7%;
+}
+
+#main_menu a:hover {
+    color:black;
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(68, 27, 27, 0.397);
+}
+
+/* #main_menu a:not(:last-of-type) {
+    margin-right: 0.3%;
+} */
+
+        /* Кнопка вход и регистрация */
+
+.chitat-post {
+    text-align: right;
+    margin-bottom: 7px;
+}
+
+.chitat-post a {
+    text-decoration: none;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+    color:rgb(48, 29, 29);
+    user-select: none;
+    outline: none;
+    text-shadow: none;
+    text-align: center;
+    border-radius: 7px;
+    background: rgb(255,212,3) linear-gradient(rgb(136, 255, 245), rgb(19, 121, 128));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+
+}
+
+.chitat-post:hover a {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(68, 27, 27, 0.397);
+}
+
+.chitat-post:active a {
+    border-color: rgba(177,159,0,1);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+}
+
+
+
+        /* Левая панель */
+
+#nav {
+    padding-top: 1px;
+    padding-left: 4px;
+    height: 85%;
+    width: 20%;
+    float: left;
+}
+
+#left_menu {
+    list-style: none;
+    display: block;
+}
+
+#left_menu a {
+    display:block;
+    background: rgba(0, 0, 0, 0.178);
+    border-top: 0;
+    padding: 30px;
+    margin-top: 9px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 4px 3px;
+    user-select: none;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+    linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255, 255, 255, 0.774), rgba(255,255,255,.0) 70%),
+    linear-gradient(to right, rgba(163, 163, 163, 0.856), rgba(255,255,255,0) 20%, rgba(191, 221, 17, 0) 90%, rgba(255,255,255,.3)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255, 255, 255, 0.123) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255, 255, 255, 0.9) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+
+#left_menu a:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 3px, 0 calc(100% - 4px);
+}
+
+#left_menu a:active {
+    top: 1px;
+}
+
+
+        /* Кнопка вверх */
+
+#to_top {
+    display: block;
+    width: 99.5%;
+    height: 5%;
+    line-height: 5%;
+    float:left;
+    text-align: right;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    position:static;
+}
+
+ul div .all_images img {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.all_images img {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+ul div .razmer_text {
+    font-size: 1.3em;
+}
+
+ul div .razmer_text_title {
+    font-size: 3em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.xyu {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.chitat-post {
+    font-size: 1.5em;
+    padding: 0 5px;
+    text-shadow: rgb(48, 24, 24) 2px 2px 2px;
+}
+
+.razmer_text_title {
+    font-size: 3em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.form-label {
+    color:rgb(0, 0, 0);
+    float: top;
+}
+
+#pole {
+    float: top;
+}
+
+.form-label {
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+}
+
+.form-error ul {
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+}
+
+.form-input {
+    width: 300px;
+    font-size: 16px;
+}
+
+#navig {
+    list-style: none;
+    margin: 8px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 3px;
+    left: 50%;
+}
+
+#navig a {
+    text-decoration: none;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 0 5px;
+    font-size: 19px;
+    overflow: hidden;
+    position: relative;
+    color: #000000;
+    text-shadow: white 1px 1px 1px;
+    background-color: #ffffff95;
+    border: 2px solid #000000;
+    transition: all 0.2s linear 0s;
+}
+
+#navig a:after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 90%;
+    top: -110%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: #2a2a2a;
+    border-radius: 100%;
+}
+
+#navig i {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#navig a:hover {
+    color: rgb(255,212,3);
+    text-shadow: black 1px 1px 1px;
+    border: 2px solid rgb(255,212,3);
+    background-color: #000000c1;
+}
+
+#dostavka  {
+    margin-top: 8px;
+    margin-left: 5px;
+    line-height: 2em;
+}
+
+#main .dostavka_1 img, .dostavka_2 img, .dostavka_3 img {
+    height: 32vh;
+    width: 33%;
+}
+
+#main .dostavka_1 {
+    float: left;
+    text-decoration: none;
+    text-shadow: none;
+    color:black;
+    width: 100%;
+    height: 33vh;
+    margin-bottom: 5px;
+
+}
+
+#main .dostavka_2 {
+    float: left;
+    text-decoration: none;
+    text-shadow: none;
+    color:black;
+    width: 100%;
+    height: 33vh;
+    margin-bottom: 5px;
+
+}
+
+#main .dostavka_3 {
+    float: left;
+    text-decoration: none;
+    text-shadow: none;
+    color:black;
+    width: 100%;
+    height: 33vh;
+    margin-bottom: 5px;
+
+}
+
+#main .dost {
+    background: rgba(167, 167, 167, 0.123);
+    padding: 5px;
+    height: 31vh;
+    width: 66%;
+    float:right;
+    list-style-image:url(li_3.png);
+}
+
+#main .dost[url] {
+    height: 10px;
+    width: 10px;
+}

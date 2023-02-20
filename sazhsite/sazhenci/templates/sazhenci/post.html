@@ -1,0 +1,12 @@
+{% extends 'sazhenci/index.html' %}
+
+{% block content %}
+
+{% if post.photo %}
+    <p class="all_images"><img src="{{post.photo.url}}"></p>
+{% endif %}
+    <h1 class="razmer_text_title">{{post.title}}</h1>
+    <hr>
+    <br>
+    <p class="razmer_text">{{post.content}}</p>
+{% endblock %}
